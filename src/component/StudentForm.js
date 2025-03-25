@@ -29,7 +29,7 @@ const StudentForm = () => {
   const [search,setSearch] = useState("")
 
   const getStudent = async () => {
-    const res = await axios.get("http://localhost:4000/getstudent");
+    const res = await getStudentsList() ;
     setData(res.data);
   };
   
