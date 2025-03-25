@@ -120,7 +120,7 @@ const StudentForm = () => {
 
   const filterData = useMemo(() => {
     return data.filter((student) =>
-      student.name.toLowerCase().includes(search.toLowerCase())
+      student.name?.toLowerCase().includes(search?.toLowerCase())
     );
   }, [data, search]);  
   
